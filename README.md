@@ -1,8 +1,18 @@
-# Tarea solutoria
+# Conexión y base de datos
 
-el grafico funciona de la siguiente manera : 
+Para la coxión se creo un controlador llamado "AccessController.php" el cual mediante el metodo "curl" hace una peticion http a la Api entregandole las credenciales, luego de obtener el token y usando el endPoint de los indicadores, se hace un segundo llamado Get utilizando el Bearer Token, se toma toda la data y se guarda en la base de datos.
 
-Tiene unos filtros que funcionan para el rango en la muestra de data, la fecha se selecciona desde un calendario
+Para la base de datos se utilizo PostgresSql : 
+![image](https://user-images.githubusercontent.com/46609963/217054192-a4d34caf-63a5-4b92-8321-e17366417a12.png)
+
+Se hizo la base de datos a mano, y luego desde el proyecto se migro la tabla con los campos, como no hay mas tablas no se hicieron las relaciones.
+La base comprueba si existe informacion, en caso de que no tenga, se vuelve a hacer la conexión con la Api para guardar la data
+
+## Grafico y página principal
+
+el grafico se hizo con chart.js y funciona de la siguiente manera : 
+
+Tiene unos filtros que se utilizan para el rango en la muestra de data, la fecha se selecciona desde un calendario
 
 ![image](https://user-images.githubusercontent.com/46609963/217051159-837baee2-119d-4bb3-bbee-f0d476169dbb.png)
 
@@ -10,9 +20,8 @@ El siguiente ejemplo corresponde a el mes de enero del año 2021
 
 ![image](https://user-images.githubusercontent.com/46609963/217051315-414210ef-31bc-40ba-a0ab-cbdca1f0c5ed.png)
 
-Esta es una vista desde la pagina sin filtro, el enlace "Solutoria Test" nos trae a esta pagina
+Esta es una vista desde la página sin filtro, el enlace "Solutoria Test" nos trae a esta pagina
 ![image](https://user-images.githubusercontent.com/46609963/217050892-4e713847-4886-4098-b081-21a9ca9c9599.png)
-
 
 
 ## Important Change with index.php
