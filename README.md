@@ -36,6 +36,10 @@ La base comprueba si existe información, en caso de que no tenga, se vuelve a h
 ![image](https://user-images.githubusercontent.com/46609963/217056001-58448cc1-3abc-4426-a772-0ff8924bd091.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056045-2d6ddc6c-54f8-4ef5-8036-552f32cfac87.png)
 
+-Los campos se validan al ingresar la información: 
+![image](https://user-images.githubusercontent.com/46609963/217057981-271fb276-a295-440c-b1f2-6e64eb13d4ee.png)
+
+
 -Se utilizo sWEETALERT 2 para los mensajes, ejemplo al eliminar:
 ![image](https://user-images.githubusercontent.com/46609963/217056158-b52e1800-0985-4561-be24-9f3d4bd167d5.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056197-c11bfdf5-ae44-470f-b642-ea9f97b13ecc.png)
