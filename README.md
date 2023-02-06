@@ -10,9 +10,9 @@ La base comprueba si existe informacion, en caso de que no tenga, se vuelve a ha
 
 ## Grafico y página principal
 
-el grafico se hizo con chart.js y funciona de la siguiente manera : 
+El grafico se hizo con chart.js y funciona de la siguiente manera : 
 
-Tiene unos filtros que se utilizan para el rango en la muestra de data, la fecha se selecciona desde un calendario
+Tiene unos filtros que se utilizan para obtener la data entre las fechas seleccionadas, se hace mediante un calendario
 
 ![image](https://user-images.githubusercontent.com/46609963/217051159-837baee2-119d-4bb3-bbee-f0d476169dbb.png)
 
@@ -23,42 +23,23 @@ El siguiente ejemplo corresponde a el mes de enero del año 2021
 Esta es una vista desde la página sin filtro, el enlace "Solutoria Test" nos trae a esta pagina
 ![image](https://user-images.githubusercontent.com/46609963/217050892-4e713847-4886-4098-b081-21a9ca9c9599.png)
 
+Existe un boton para ingresar al crud.
 
-## Important Change with index.php
+##CRUD
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+El Crud se ve de la siguiente manera : 
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+![image](https://user-images.githubusercontent.com/46609963/217055459-4a50b0f7-5d44-4a0f-b293-3f8f651fc07c.png)
 
-**Please** read the user guide for a better explanation of how CI4 works!
+Se utilizo Data Tables para el manejo de la informacion.
+Cada boton abre un modal ejemplo para agregar un nuevo indicador:
+![image](https://user-images.githubusercontent.com/46609963/217055963-df5526a1-2510-462d-b9c3-8f2156ae0abb.png)
+![image](https://user-images.githubusercontent.com/46609963/217056001-58448cc1-3abc-4426-a772-0ff8924bd091.png)
+![image](https://user-images.githubusercontent.com/46609963/217056045-2d6ddc6c-54f8-4ef5-8036-552f32cfac87.png)
 
-## Repository Management
+Se utilizo sWEETALERT 2 para los mensajes ej al eliminar:
+![image](https://user-images.githubusercontent.com/46609963/217056158-b52e1800-0985-4561-be24-9f3d4bd167d5.png)
+![image](https://user-images.githubusercontent.com/46609963/217056197-c11bfdf5-ae44-470f-b642-ea9f97b13ecc.png)
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
 
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
