@@ -1,0 +1,1473 @@
+CRITICAL - 2023-02-06 00:21:07 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(99): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 00:21:43 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(99): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 00:36:36 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(99): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 00:39:06 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(99): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 00:39:43 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(99): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:24:47 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1926, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:24:47 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1926, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:25:42 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1928, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:25:42 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1928, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:26:18 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1930, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:26:18 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1930, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:26:26 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1931, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:26:26 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1931, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:30:31 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1943, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:30:31 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1943, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:32:01 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1945, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:32:01 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1945, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:34:49 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1946, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:34:49 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1946, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:35:24 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1948, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:35:24 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1948, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:38:11 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1949, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:38:11 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1949, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:38:37 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1950, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:38:37 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1950, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:39:47 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1951, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:39:47 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1951, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:40:56 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1952, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:40:56 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1952, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 01:44:07 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1953, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 01:44:07 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1953, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:51:27 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:52:57 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:53:33 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:56:47 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:58:11 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 01:58:40 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 02:05:21 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 02:06:02 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:06:20 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1954, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:06:20 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1954, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:07:16 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1955, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:07:16 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1955, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:08:56 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1956, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:08:56 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1956, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:15:36 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1957, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:15:36 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1957, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:17:22 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1958, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:17:22 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1958, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 02:19:35 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:21:11 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1959, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:21:11 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1959, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:25:34 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1960, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:25:34 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1960, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:26:26 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1961, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:26:26 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1961, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:27:31 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1962, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:27:31 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1962, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:28:28 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1963, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:28:28 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1963, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:29:13 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1964, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:29:13 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1964, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:30:13 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1965, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:30:13 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1965, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:31:33 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1966, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:31:33 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1966, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:38:01 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1967, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:38:01 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1967, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:39:17 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1968, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:39:17 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1968, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:41:05 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1969, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:41:05 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1969, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:41:16 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1970, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:41:16 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1970, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:44:50 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1971, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:44:50 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1971, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:47:29 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1972, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:47:29 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1972, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(61): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:48:39 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1973, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:48:39 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1973, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 02:57:13 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1974, null, null, null, null, null, null, null). in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 02:57:13 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombreIndicador» de la relación «indicadores» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1974, null, null, null, null, null, null, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 03:04:12 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 1: ...angue', 'Probar final', 'Probar final', '1232.3', '', '', 'P...
+                                                             ^ in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 03:04:12 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 1: ...angue', 'Probar final', 'Probar final', '1232.3', '', '', 'P...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 03:04:29 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 1: ...angue', 'Probar final', 'Probar final', '1232.3', '', '', 'P...
+                                                             ^ in D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Estudio\solutoriaTest\system\Database\Postgre\Connection.php(147): pg_query()
+#2 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 D:\Estudio\solutoriaTest\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 D:\Estudio\solutoriaTest\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#5 D:\Estudio\solutoriaTest\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\Estudio\solutoriaTest\system\BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 D:\Estudio\solutoriaTest\system\Model.php(729): CodeIgniter\BaseModel->insert()
+#8 D:\Estudio\solutoriaTest\system\BaseModel.php(692): CodeIgniter\Model->insert()
+#9 D:\Estudio\solutoriaTest\app\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+#10 D:\Estudio\solutoriaTest\app\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+#11 D:\Estudio\solutoriaTest\system\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+#12 D:\Estudio\solutoriaTest\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#13 D:\Estudio\solutoriaTest\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#14 D:\Estudio\solutoriaTest\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 D:\Estudio\solutoriaTest\system\Commands\Server\rewrite.php(47): require_once('...')
+#16 {main}
+CRITICAL - 2023-02-06 03:04:29 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 1: ...angue', 'Probar final', 'Probar final', '1232.3', '', '', 'P...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH\Models\Indicadores.php(49): CodeIgniter\BaseModel->save()
+ 7 APPPATH\Controllers\IndicadoresController.php(59): App\Models\Indicadores->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->add()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 03:42:20 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 03:43:32 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 03:48:19 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 390.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Models\Indicadores.php(53): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\IndicadoresController.php(88): App\Models\Indicadores->updateData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:19:17 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(110): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:22:25 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\Model.php(455): CodeIgniter\Database\Postgre\Builder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH\Controllers\IndicadoresController.php(110): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndicadoresController->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
