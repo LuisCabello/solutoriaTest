@@ -25,25 +25,23 @@ La base comprueba si existe información, en caso de que no tenga, se vuelve a h
 
 -Existe un botón para ingresar al crud.
 
-##CRUD
+###CRUD
 
-El Crud se ve de la siguiente manera: 
+-El Crud se ve de la siguiente manera: 
 
 ![image](https://user-images.githubusercontent.com/46609963/217055459-4a50b0f7-5d44-4a0f-b293-3f8f651fc07c.png)
 
-Se utilizo Data Tables para el manejo de la información.
-Cada botón abre un modal ejemplo para agregar un nuevo indicador:
+-Se utilizo Data Tables para el manejo de la información.
+-Cada botón abre un modal ejemplo para agregar un nuevo indicador:
 ![image](https://user-images.githubusercontent.com/46609963/217055963-df5526a1-2510-462d-b9c3-8f2156ae0abb.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056001-58448cc1-3abc-4426-a772-0ff8924bd091.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056045-2d6ddc6c-54f8-4ef5-8036-552f32cfac87.png)
 
-Se utilizo sWEETALERT 2 para los mensajes, ejemplo al eliminar:
+-Se utilizo sWEETALERT 2 para los mensajes, ejemplo al eliminar:
 ![image](https://user-images.githubusercontent.com/46609963/217056158-b52e1800-0985-4561-be24-9f3d4bd167d5.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056197-c11bfdf5-ae44-470f-b642-ea9f97b13ecc.png)
 
-Y finalmente un ejemplo para modificar: 
+-Finalmente un ejemplo para modificar: 
 
 ![image](https://user-images.githubusercontent.com/46609963/217056440-257fd001-e569-4267-9edc-6d434f5dcc49.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056494-f3976696-0604-4801-9465-874b3e4a710a.png)
-
-
