@@ -1,6 +1,6 @@
 # Conexión y base de datos
 
-Para la coxión se creo un controlador llamado "AccessController.php" el cual mediante el metodo "curl" hace una peticion http a la Api entregandole las credenciales, luego de obtener el token y usando el endPoint de los indicadores, se hace un segundo llamado Get utilizando el Bearer Token, se toma toda la data y se guarda en la base de datos.
+*Para la coxión se creo un controlador llamado "AccessController.php" el cual mediante el metodo "curl" hace una peticion http a la Api entregandole las credenciales, luego de obtener el token y usando el endPoint de los indicadores, se hace un segundo llamado Get utilizando el Bearer Token, se toma toda la data y se guarda en la base de datos.
 
 Para la base de datos se utilizo PostgresSql : 
 ![image](https://user-images.githubusercontent.com/46609963/217054192-a4d34caf-63a5-4b92-8321-e17366417a12.png)
@@ -41,5 +41,9 @@ Se utilizo sWEETALERT 2 para los mensajes ej al eliminar:
 ![image](https://user-images.githubusercontent.com/46609963/217056158-b52e1800-0985-4561-be24-9f3d4bd167d5.png)
 ![image](https://user-images.githubusercontent.com/46609963/217056197-c11bfdf5-ae44-470f-b642-ea9f97b13ecc.png)
 
+Y finalmente un ejemplo para Modificar : 
+
+![image](https://user-images.githubusercontent.com/46609963/217056440-257fd001-e569-4267-9edc-6d434f5dcc49.png)
+![image](https://user-images.githubusercontent.com/46609963/217056494-f3976696-0604-4801-9465-874b3e4a710a.png)
 
 
