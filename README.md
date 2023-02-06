@@ -1,16 +1,19 @@
 # Tarea solutoria
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+el grafico funciona de la siguiente manera : 
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Tiene unos filtros que funcionan para el rango en la muestra de data, la fecha se selecciona desde un calendario
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+![image](https://user-images.githubusercontent.com/46609963/217051159-837baee2-119d-4bb3-bbee-f0d476169dbb.png)
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+El siguiente ejemplo corresponde a el mes de enero del año 2021
+
+![image](https://user-images.githubusercontent.com/46609963/217051315-414210ef-31bc-40ba-a0ab-cbdca1f0c5ed.png)
+
+Esta es una vista desde la pagina sin filtro, el enlace "Solutoria Test" nos trae a esta pagina
+![image](https://user-images.githubusercontent.com/46609963/217050892-4e713847-4886-4098-b081-21a9ca9c9599.png)
+
+
 
 ## Important Change with index.php
 
