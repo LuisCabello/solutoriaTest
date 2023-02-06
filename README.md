@@ -25,7 +25,7 @@ La base comprueba si existe información, en caso de que no tenga, se vuelve a h
 
 -Existe un botón para ingresar al crud.
 
-###CRUD
+## CRUD
 
 -El Crud se ve de la siguiente manera: 
 
